@@ -36,12 +36,13 @@ int main(){
         while(used_eleves[eleve1] == eleves[eleve1]){
             eleve1 = rand() % 12;
         }
+        
+        used_eleves[eleve1] = eleves[eleve1];
 
         while(used_eleves[eleve2] == eleves[eleve2]){
             eleve2 = rand() % 12;
         }
 
-        used_eleves[eleve1] = eleves[eleve1];
         used_eleves[eleve2] = eleves[eleve2];
 
         printf("Eleve : %s avec l'eleve : %s\n", eleves[eleve1], eleves[eleve2]);
